@@ -13,15 +13,20 @@
         }
         
         #personal_Info {
-            margin-top: 30px;
+             margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
         }
 
         #personal_Info input[type="text"] {
-        background-color:off-white;
-            display: block;
-            margin: 10px auto;
-            padding: 10px;
-            width: 250px;
+    background-color: off-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+    width: 150px;
         }
         
         .system_info, .survey_info {
@@ -77,12 +82,17 @@
     <h2>PERSONAL INFORMATION</h2>
     
      <div id="personal_Info">
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="FY / Deptt">
-        <input type="text" placeholder="Officer / Staff">
-        <input type="text" placeholder="PL No.">
-        <input type="text" placeholder="Section">
-        <input type="text" placeholder="Designation">
+     <table>
+     <tr><td>
+        <input type="text" placeholder="Name"></td>
+        <td>
+        <input type="text" placeholder="FY / Deptt"></td>
+       <td> <input type="text" placeholder="Officer / Staff"></td></tr>
+        <tr><td>
+        <input type="text" placeholder="PL No."></td>
+       <td> <input type="text" placeholder="Section"></td>
+        <td><input type="text" placeholder="Designation"></td></tr>
+        </table>
      </div>
         
        <h2>SYSTEM INFORMATION</h2>
@@ -199,7 +209,3 @@
     </div>
 </body>
 </html>
-
-
-
-
