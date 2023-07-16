@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        .dashboard {
+            background-color: lightgray;
+            padding: 20px;
+            text-align: left;
+            font-size: 24px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: 100px;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        Dashboard
+    </div>
+
+    <div class="row">
+        <div class="icon" onclick="openWordFile('Document/letter.docx')">
+            <img src="letter-icon.png" alt="Letter Icon" width="64" height="64">
+            <span>Letter</span>
+        </div>
+        <div class="icon" onclick="openWordFile('Documents/note.docx')">
+            <img src="note-icon.png" alt="Note Icon" width="64" height="64">
+            <span>Note</span>
+        </div>
+        <div class="icon" onclick="openWordFile('Documents/mom.docx')">
+            <img src="mom-icon.png" alt="MOM Icon" width="64" height="64">
+            <span>MOM</span>
+        </div>
+        <div class="icon" onclick="openWordFile('Documents/do.docx')">
+            <img src="do-icon.png" alt="DO Icon" width="64" height="64">
+            <span>DO</span>
+        </div>
+    </div>
+
+    <script>
+        function openWordFile(filename) {
+            window.open(filename);
+        }
+    </script>
+</body>
+</html>
